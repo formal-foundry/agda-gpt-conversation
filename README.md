@@ -2,13 +2,13 @@
 
 Before start, you have to prepare directory with templates. Directory is
 available in git repositry * /data/templates *  Copy this dir in your currnet
-executing dix1r, or * ~/.agda-gpt-experiment * witch one you need to create
+executing dix1r, or * ~/.agda-gpt-conversation * witch one you need to create
 first.
 
-Example: aga -i=dir -s= Problems/ExampleProblems/ -c=myConfig.json -m=Pretty
+Example: agc -i=dir -s= Problems/ExampleProblems/ -c=myConfig.json -m=Pretty
 -l=15
 
-aga [OPTIONS]
+agc [OPTIONS]
 
 Common flags:
   -i --input=ITEM   This flag defines the problems located in the
@@ -36,7 +36,7 @@ Common flags:
                     Problems directory, in which case all the problems in the
                     problem repository will be indicated for solving.
   -c --conf=FILE    this is a config file, it should be in the current
-                    directory or * ~/.agda-gpt-experiment * default value for
+                    directory or * ~/.agda-gpt-conversation * default value for
                     this flag is config.json
   -m --mode=MODE    Choose one of the operating modes. * Pretty * or
                     * Debug *  - which has more details. The default value for
