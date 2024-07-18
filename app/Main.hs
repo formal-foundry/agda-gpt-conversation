@@ -146,7 +146,7 @@ initInfo env = do
   setCursorPosition 0 0
   setSGR [(SetColor Foreground Dull Blue)]
   putStrLn "\n\n\n###############################################"
-  putStrLn "Agda-GPT-Assistant started with the following flags:\n\n"
+  putStrLn "Agda-Gpt-Conversation started with the following flags:\n\n"
   setSGR [Reset]
   putStrLn $ "TASK:  " ++ (taskDescription env) ++ "\n\n"
   putStrLn $ "MODE:  " ++ (show (operationMode env)) ++ "\n\n"

@@ -1,4 +1,4 @@
-name:                agda-gpt-experiment
+name:                agda-gpt-conversation
 version:             0.1.0.0
 github:              "githubuser/agda-gpt-experiment"
 license:             BSD3
@@ -59,7 +59,7 @@ library:
   source-dirs: src
 
 executables:
-  aga:
+  agc:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -67,10 +67,10 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - agda-gpt-experiment
+    - agda-gpt-conversation
 
 tests:
-  agda-gpt-experiment-test:
+  agda-gpt-converstation-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -78,4 +78,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - agda-gpt-experiment
+    - agda-gpt-conversation

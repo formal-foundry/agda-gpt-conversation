@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.35.2.
+-- This file has been generated from package.yaml by hpack version 0.36.0.
 --
 -- see: https://github.com/sol/hpack
 
-name:           agda-gpt-experiment
+name:           agda-gpt-conversation
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/agda-gpt-experiment#readme>
 homepage:       https://github.com/githubuser/agda-gpt-experiment#readme
@@ -30,7 +30,7 @@ library
       Gpt
       Types
   other-modules:
-      Paths_agda_gpt_experiment
+      Paths_agda_gpt_conversation
   hs-source-dirs:
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
@@ -58,17 +58,17 @@ library
     , transformers
   default-language: Haskell2010
 
-executable aga
+executable agc
   main-is: Main.hs
   other-modules:
-      Paths_agda_gpt_experiment
+      Paths_agda_gpt_conversation
   hs-source-dirs:
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       MissingH
     , aeson
-    , agda-gpt-experiment
+    , agda-gpt-conversation
     , ansi-terminal
     , base >=4.7 && <5
     , bytestring
@@ -90,18 +90,18 @@ executable aga
     , transformers
   default-language: Haskell2010
 
-test-suite agda-gpt-experiment-test
+test-suite agda-gpt-converstation-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_agda_gpt_experiment
+      Paths_agda_gpt_conversation
   hs-source-dirs:
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       MissingH
     , aeson
-    , agda-gpt-experiment
+    , agda-gpt-conversation
     , ansi-terminal
     , base >=4.7 && <5
     , bytestring
