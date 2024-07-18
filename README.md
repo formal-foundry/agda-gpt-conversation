@@ -5,8 +5,8 @@ available in git repositry * /data/templates *  Copy this dir in your currnet
 executing dix1r, or * ~/.agda-gpt-conversation * witch one you need to create
 first.
 
-Example: agc -i=dir -s= Problems/ExampleProblems/ -c=myConfig.json -m=Pretty
--l=15
+Example: agc -i=dir -s=Problems/ExampleProblems/ -c=myConfig.json -m=Pretty
+-l=5
 
 agc [OPTIONS]
 
